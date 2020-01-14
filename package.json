@@ -2,21 +2,13 @@
   "name": "taiga",
   "version": "1.0.0",
   "description": "",
-  "main": "postcss.config.js",
+  "main": "",
   "scripts": {
     "build": "webpack --mode production --config 'webpack/webpack.config.build.js'",
     "start": "webpack-dev-server --mode development --open --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/taiga-programming/portfolio3.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/taiga-programming/portfolio3/issues"
-  },
-  "homepage": "https://github.com/taiga-programming/portfolio3#readme",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.4.3",
     "babel-core": "^6.26.0",
@@ -42,7 +34,6 @@
     "webpack-notifier": "^1.7.0"
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
-    "node-modules": "^1.0.1"
+    "babel-polyfill": "^6.26.0"
   }
 }
