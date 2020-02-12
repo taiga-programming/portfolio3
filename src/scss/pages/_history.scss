@@ -4,7 +4,10 @@
   background-size: cover;
   box-sizing: initial;
   width: 100%;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   
+ 
 
   &__section-container {
     text-align: center;
@@ -13,30 +16,60 @@
 
   }
 
+ 
   &__logo {
     width: 48.8rem;
     height: auto;
-
   }
 
-  &__container {
+  &__container-logo{
+    text-align: center;
+  }
+
+
+
+  &__container-item {
     background-color: #fff;
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: 80%;
+    width: 85rem;
+    height: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    &--secondly {
+      padding-bottom: 5rem;
+    }
   }
 
-  &__container-img {
-    // width: 50%;
+  &__container-img--left {
+    margin-top: -3.5rem;
+    margin-left: -4rem;
+  }
+
+  &__container-img-right {
+    margin-top: -4rem;
+    margin-right: -4rem;
   }
 
   &__container-text {
-
+    padding-top: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
   }
 
-  
+  &__container-text--secondly {
+    padding: 8rem 3rem 6rem 3rem;
+    
+  }
 
+  &__img {
+    width: 48.0rem;
+    height: auto;
+  }
+ 
   &__text--secondly {
     color: #333;
     font-size: 2.0rem;
