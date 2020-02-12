@@ -1,0 +1,20 @@
+.concept {
+  background: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__section-container {
+    text-align: center;
+  }
+
+  &__body {
+    text-align: center;
+    color: #333;
+    font-size: 2.2rem;
+    line-height: 2.40909;
+  }
+
+  &__keywords {
+    font-size: 3.8rem;
+  } 
+}

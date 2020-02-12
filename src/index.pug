@@ -6,36 +6,44 @@ html(lang="jp")
     meta(name="viewport", content="width=device-width, initial-scale=1")
   body
     .header
-      img.header__logo(src="/src/img/logo.png", alt="picture")
-      ul.navigation__list
-        li.navigation__item 
-          p.navigation__text コンセプト
-        li.navigation__item 
-          p.navigation__text 歴史
-        li.navigation__item 
-          p.navigation__text 活動内容
-        li.navigation__item 
-          p.navigation__text メンバー
-        li.navigation__item 
-          p.navigation__text お知らせ
-        li.navigation__item
-          p.navigation__icon カレンダー
-        li.navigation__item
-          p.navigation__icon スポンサー
+      .header__inner
+        .header__logo-container 
+          img.header__logo(src="/src/img/logo.png", alt="picture")
+        ul.navigation__list
+          li.navigation__item 
+            p.navigation__text コンセプト
+          li.navigation__item 
+            p.navigation__text 歴史
+          li.navigation__item 
+            p.navigation__text 活動内容
+          li.navigation__item 
+            p.navigation__text メンバー
+          li.navigation__item 
+            p.navigation__text お知らせ
+          li.navigation__item
+            p.navigation__icon カレンダー
+          li.navigation__item
+            p.navigation__icon スポンサー
     .mainvisual
       img.mainvisual__logo(src="/src/img/top3.png", alt="picture")
     .concept
-      img.concept__logo(src="/src/img/t-1.png", alt="picture")
-      p.concept__text コンセプト
-      p.concept__date 2015年1月
-      p.concept__keywords 「楽しい」「友達」「居場所」
-      p.concept__longtext というキーワードをもとに、#[br]同級生3人で結成されたチーム #[br]“ぺーたーず“#[br]名前の由来は「遊牧民」#[br]メンバーそれぞれが個性を活かした#[br]生き方をしていて、#[br]場所や常識にとらわれず、#[br]身軽に自由に動いている。#[br]2016年にクラウドファンディングをおこない、その資金で東京にBARを開業。#[br]たのしいこと、ワクワクすることに周りを勝手に巻き込んでいく。
+      .concept__inner
+        h2.concept__section-container
+          img.concept__logo(src="/src/img/t-1.png", alt="picture")
+        .concept__body
+          p.concept__text コンセプト
+          p.concept__date 2015年1月
+          p.concept__keywords 「楽しい」「友達」「居場所」
+          p.concept__longtext というキーワードをもとに、#[br]同級生3人で結成されたチーム #[br]“ぺーたーず“#[br]名前の由来は「遊牧民」#[br]メンバーそれぞれが個性を活かした#[br]生き方をしていて、#[br]場所や常識にとらわれず、#[br]身軽に自由に動いている。#[br]2016年にクラウドファンディングをおこない、その資金で東京にBARを開業。#[br]たのしいこと、ワクワクすることに周りを勝手に巻き込んでいく。
     .history
-      img.history(src="/src/img/t-2.png", alt="picture")
-      p.history__text ぺーたーずの歴史
+      h2.history__section-container
+        img.history__logo(src="/src/img/t-2.png", alt="picture")
+        p.history__text ぺーたーずの歴史
       .history__container 
-        img.history__img(src="/src/img/fr-1.jpg", alt="picture")
-        p.history__text.history__text--secondly ホームページからこんにちは。ぺーたーずです。ぼくらは2015年に同級生3人で結成したチームで、はじめは3人で一緒にシェアハウスに住みながら、イベントをやったりしていました。
+        .history__container-img
+          img.history__img(src="/src/img/fr-1.jpg", alt="picture")
+        .history__container-text
+          p.history__text.history__text--secondly ホームページからこんにちは。ぺーたーずです。ぼくらは2015年に同級生3人で結成したチームで、はじめは3人で一緒にシェアハウスに住みながら、イベントをやったりしていました。
       img.history__logo(src="/src/img/line1.png", alt="picture")
       .history__container.history__container--secondly 
         p.history__text.history__text--tertiary 子どもの頃みたいに利害関係なく遊べる環境ってオトナになると減るよね、ってことで「楽しくて友達ができて居場所になる」ような空間をめざして、ほぼ赤字みたいな感じでイベントをやっていました。
@@ -126,13 +134,12 @@ html(lang="jp")
         .activity__whole-item-body.activity__whole-item-body--fourthly
           p.activity__title.activity__title--fourthly 絵本
           p.activity__text.activity__text--seventhly ぺーたーずを題材にした絵本「ゆかいなヤツら」を2018年1月に販売スタート。製作資金はクラウドファンディングでご支援いただき（112万円）、発送作業などもみんなでおこないました。メンバーのしみが物語を書いて、友人のしようこさんが絵を描いてくれた作品です。90ページにもなるボリューム。いまの大人に向けて書いた絵本です。人生に悩んでいる人はぜひ。購入はこちらのオンラインショップから。
-          img.activity__img.activity__img--fifthly(src="/src/img/b-6.jpg", alt="picture")
     .member
       img.member__img(src="/src/img/t-3.png", alt="picture")
       p.member__text メンバー
       ul.member__list 
         li.member__item 
-          img.member__img(src="/src/img/m-1.png", alt="picture")
+          img.member__img(src="/src/img/m-1.jpg", alt="picture")
           .member__container
             p.member__text たに
             img.memver__logo(src="/src/img/component.png", alt="picture")
@@ -140,21 +147,21 @@ html(lang="jp")
           p.member__body-text.member__body-text--2 合理性と人情と筋肉を大切にする情熱系ツッコミ担当。嫌いなものは非効率な仕組み・和式便所・ご飯大盛りなのに少なっ！って感じる飲食店。大卒後コンサルティング会社に就職するが、一年半で脱サラ。いまでは、飲食店経営／YouTube／パーソナルトレーナー／元水中パフォーマー／ブログアフィリエイト／セミナー講師／イベントMC など、好きなことを仕事にしている。
           a.meber__link(href="#") ブログ:他にログ
         li.member__item 
-          img.member__img(src="/src/img/m-2.png", alt="picture")
+          img.member__img(src="/src/img/m-2.jpg", alt="picture")
           .member__container
             p.member__text しみ
             img.memver__logo(src="/src/img/component.png", alt="picture")
             p.member__body-text 合理性と人情と筋肉を大切にする情熱系ツッコミ担当。嫌いなものは非効率な仕組み・和式便所・ご飯大盛りなのに少なっ！って感じる飲食店。
           a.meber__link(href="#") ブログ:他にログ
         li.member__item 
-          img.member__logo(src="/src/img/m-3.png", alt="picture")
+          img.member__logo(src="/src/img/m-3.jpg", alt="picture")
           .member__container
             p.member__text はやて
             img.member__img(src="/src/img/component.png", alt="picture")
             p.member__body-text ぺーたーずの体温。人が大好き。大学を4年卒業間近で中退、半年間俳優として活動し、その後横浜から沖縄までチャリ旅をし、沖縄にてコテージの管理人を務める。帰省後、2ヶ月間就活をするも「自分の人生を生きる」ことを考え、就活を辞め、ハイパーリバ邸2代目管理人に就任。017年9月に友希と付き合ったことでぺーたーずに加入、その12日後に電撃結婚、現在は11月に子どもが生まれてくる父である。好きな言葉は「我以外皆師也」と「童心忘るるべからず」
           a.member__link(href="#") ブログ : かぜとなれ
         li.member__item 
-          img.member__img(src="/src/img/m-4.png", alt="picture")
+          img.member__img(src="/src/img/m-4.jpg", alt="picture")
           .member__container
             p.member__text ユウキ
             img.memver__logo(src="/src/img/component.png", alt="picture")
@@ -162,52 +169,102 @@ html(lang="jp")
           a.member__link(href="#") ブログ： あたまのなかハッピーセット
       ul.member__list.member__list--secondly
         li.member__item.memeber__item--secondly 
-          img.member__img.member__img--secondly(src="/src/img/m-5.png", alt="picture")
+          img.member__img.member__img--secondly(src="/src/img/m-5.jpg", alt="picture")
           .member__container.member__container--secondly
             p.member__text ごんちゃん
             img.memver__logo(src="/src/img/component.png", alt="picture")
             p.member__body-text ぺーたーず店長。沖縄県出身のラッパー。沖縄よしもと1期生 / 元お笑い芸人。即興パフォーマー。アル中
             p.member__body-text.member__body-text--secondly 人との出会いと飲みが大好き。出会った人たちに元気と笑いを届けたい、南国育ちの陽気な酔っぱらいボーイ。
         li.member__item.memeber__item--secondly 
-          img.member__img.member__img--secondly(src="/src/img/m-6.png", alt="picture")
+          img.member__img.member__img--secondly(src="/src/img/m-6.jpg", alt="picture")
           .member__container.member__container--secondly
             p.member__text ジロ
             img.memver__logo(src="/src/img/component.png", alt="picture")
             p.member__body-text ぺーたーずTVのボケ担当。クールな変態紳士。横浜出身。就活から逃げて、海外3年間逃亡の後に、横浜にバー「イプシロン」とシェアハウス「リバ邸カオス」をオープン
         li.member__item.memeber__item--secondly 
-          img.member__img.member__img--secondly(src="/src/img/m-7.png", alt="picture")
+          img.member__img.member__img--secondly(src="/src/img/m-7.jpg", alt="picture")
           .member__container.member__container--secondly
             p.member__text あちゃこ
             img.memver__logo(src="/src/img/component.png", alt="picture")
             p.member__body-text スポーツ業界で働くたぬき型ロボット。3歳から始めた空手は全国優勝経験有り。プライドは皆無だが、運動能力が無駄に高い。PATERSのコアメンバーゆうきちゃんが運営するシェアハウス「東京未来人アジト」の住人。OVERALLのデニム濃い人。スポーツ・映画館・TOY STORY・筋肉が好き。専門は空手だが、見た目はサーファー。肌が黒い。とにかく黒い。
             a.member__link(href="#") ブログ： あたまのなかハッピーセット
         li.member__item.memeber__item--secondly 
-         img.member__img.member__img--secondly(src="/src/img/m-8.png", alt="picture")
+         img.member__img.member__img--secondly(src="/src/img/m-8.jpg", alt="picture")
          .member__container.member__container--secondly
             p.member__text けんわたなーべ
             img.memver__logo(src="/src/img/component.png", alt="picture")
             p.member__body-text 食と旅と歌とディズニーをこよなく愛するフリーライター兼カメラマン。複数webメディアで執筆しながらプロフィール写真の撮影から取材撮影を行なっている。海外に憧れカンボジアに就職するも3ヶ月でクビ。帰国後、時間と場所にとらわれない働き方を目指し、フリーライターになる。「好きなことで誰かのきっかけになる」が人生のテーマ。年パス持ちのディズニーオタクで、週に1度は舞浜に行かないと発作を起こすという持病を持っている。エレクトリカルパレード待ちながら仕事してたりする。
         li.member__item.memeber__item--secondly 
-          img.member__img.member__img--secondly(src="/src/img/m-9.png", alt="picture")
+          img.member__img.member__img--secondly(src="/src/img/m-9.jpg", alt="picture")
           .member__container.member__container--secondly
             p.member__text れいさっち
             img.memver__logo(src="/src/img/component.png", alt="picture")
             p.member__body-text 自分自身を自由に表現することを楽しんでいる人。岐阜県生まれ神奈川県育ち。大卒後、夜のお仕事を経てリラクゼーションサロンを開業するが１年で閉業。ダンスインストラクター/パフォーマー/ホステス/リラクゼーションサロンセラピスト/フィーリングアーティスト などいろいろな経歴を持つ。自分を例えるなら「月と太陽」好きなことは、ひととお話ししてそのひとの本質を探ってキラキラを引き出すこと。好きなものはきれいな海と世界に一つしかないもの。
         li.member__item.memeber__item--secondly 
-          img.member__img.member__img--secondly(src="/src/img/m-10.png", alt="picture")
+          img.member__img.member__img--secondly(src="/src/img/m-10.jpg", alt="picture")
           .member__container.member__container--secondly
             p.member__text シオリーヌ
             img.memver__logo(src="/src/img/component.png", alt="picture")
             p.member__body-text 助産師&精神科ナースみなさんこんにちは、シオリーヌです！病棟看護師として働きながら、性教育の講師活動をしています。ぺーたーずでは性について気軽にオープンに語り合うイベントなど定期的に開催しているので、遊びにきてくれると嬉しいです！趣味は音楽、お笑い、おしゃべり！しみ率いるDJ & パフォーマンスグループ「OVERALL」の一員でもあります。たくさんの人と出会える大好きな居場所、ぺーたーず。ぜひ一緒に、楽しい時間を過ごしましょう！
         li.member__item.memeber__item--secondly 
-          img.member__img.member__img--secondly(src="/src/img/m-11.png", alt="picture")
+          img.member__img.member__img--secondly(src="/src/img/m-11.jpg", alt="picture")
           .member__container.member__container--secondly
             p.member__text シオリーヌ
             img.memver__logo(src="/src/img/component.png", alt="picture")
             p.member__body-text ーたーずの縁の下の力持ちデッカい裏方としてイベントのサポートや写真・動画を撮影し、みなさんの楽しい時間の共有に役立つネタを集めてます。ぺーたーずが自由に踊り踊ってることが、一番楽しいのでそのための準備は欠かさず行います！普段は会社員として清掃業界から環境問題に貢献しエシカルやSDGsやESG投資にも積極的に活動しています！企業や一般の人にも環境問題の取り組みが大事な中で、皆さんが「どんなことしたらいいんだろう？」と分からない時には、ぜひ声をかけて下さい！皆さんにも出来る事が必ずあります！
         li.member__item.memeber__item--secondly 
-          img.member__img.member__img--secondly(src="/src/img/m-12.png", alt="picture")
+          img.member__img.member__img--secondly(src="/src/img/m-12.jpg", alt="picture")
+          .member__container.member__container--secondly
+            p.member__text ジュンキ
+            img.memver__logo(src="/src/img/component.png", alt="picture")
+            p.member__body-text ぺーたーずの縁の下の力持ちデッカい裏方としてイベントのサポートや写真・動画を撮影し、みなさんの楽しい時間の共有に役立つネタを集めてます。ぺーたーずが自由に踊り踊ってることが、一番楽しいのでそのための準備は欠かさず行います！普段は会社員として清掃業界から環境問題に貢献しエシカルやSDGsやESG投資にも積極的に活動しています！企業や一般の人にも環境問題の取り組みが大事な中で、皆さんが「どんなことしたらいいんだろう？」と分からない時には、ぜひ声をかけて下さい！皆さんにも出来る事が必ずあります！
+        li.member__item.memeber__item--secondly 
+          img.member__img.member__img--secondly(src="/src/img/m-13.jpg", alt="picture")
           .member__container.member__container--secondly
             p.member__text たけるん
             img.memver__logo(src="/src/img/component.png", alt="picture")
             p.member__body-text みんなの笑顔が宝物！いつもパジャマで生活しているしあわせのパジャマニンゲン。元ギャル男で元板前。ファッションデザイナー。自由人に見えて仕事人。ジブリのことを語らせたらやたら細かい。ラピュタに住んだ経験あり。(ほんまやで？)
+    .news
+      img.news__img(src="/src/img/t-5.png", alt="picture")
+      .news__container
+        p.news__time 2017/5/10
+        a.news__text(href="#") 『Cafe ＆ Bar PATERS』遂にオープンしました！
+    .sponser
+      img.sponser__logo(src="/src/img/t-7.png", alt="picture")
+      img.sponser__img(src="/src/img/banner.jpg", alt="picture")
+    .footer
+      .footer__memu
+        ul.footer__nav-sns
+          li.footer__nav-sns-item
+            img.footer__nav-logo(src="/src/img/i-twitter.png", alt="picture")
+          li.footer__nav-sns-item
+            img.footer__nav-logo(src="/src/img/i-facebook.png", alt="picture")
+          li.footer__nav-sns-item
+            img.footer__nav-logo(src="/src/img/i-instagram.png", alt="picture")
+        ul.footer__nav-menu-item
+          li.footer__nav-menu-item
+            p.footer__nav-text コンセプト
+          li.footer__nav-menu-item
+            p.footer__nav-text 歴史
+          li.footer__nav-menu-item
+            p.footer__nav-text 活動内容
+          li.footer__nav-menu-item
+            p.footer__nav-text メンバー
+          li.footer__nav-menu-item
+            p.footer__nav-text お知らせ
+          li.footer__nav-menu-item
+            p.footer__nav-text カレンダー
+          li.footer__nav-menu-item
+            p.footer__nav-text スポンサー
+      .footer__bottom
+        p.footer__bottom-text Copyright © PATERS All Rights Reserved.
+        .footer__bottom-container
+          .footer__bottom-text.footer__bottom-text--secondly
+            p.footer__bottom-text Design:
+            a.footer__bottom-link(href="#") CHIZUMI
+            p.footer__bottom-text lllust:
+            a.footer__bottom-link(href="#") CAORU
+            p.footer__bottom-text Coding:
+            a.footer__bottom-link(href="#") HANIWAMAN
+            p.footer__bottom-text Produce:
+              a.footer__bottom-link(href="#") CLAY
