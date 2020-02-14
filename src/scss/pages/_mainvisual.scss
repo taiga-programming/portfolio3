@@ -1,5 +1,5 @@
 .mainvisual {
-  background: transparent url("/src/img/header.jpg");
+  background: transparent url("/src/img/man-731900_1920.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 64%;
@@ -10,8 +10,11 @@
   &__logo {
     position: absolute;
     display: block;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    width: 38.3rem;
   }
 }
