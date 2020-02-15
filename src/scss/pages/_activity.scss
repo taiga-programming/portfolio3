@@ -1,0 +1,37 @@
+.activity {
+  background: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: initial;
+  // width: 100%;
+  padding-top: 10rem;
+  min-width: 100rem;
+
+
+  &__section-container {
+    text-align: center;
+    margin-bottom: 13.5rem;
+    width: initial;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+
+    &--secondly {
+      margin-top: 2rem;
+    }
+  }
+
+  &__text {
+    text-align: center;
+  }
+}
