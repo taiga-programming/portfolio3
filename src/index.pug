@@ -9,6 +9,7 @@ html(lang="jp")
       .header__inner
         .header__logo-container 
           img.header__logo(src="/src/img/d664c0d3-c210-4840-ad4d-972ee7e6ae46_200x200.png", alt="picture")
+           
         ul.navigation__list
           li.navigation__item 
             p.navigation__text CONCEPT
@@ -20,7 +21,7 @@ html(lang="jp")
             p.navigation__text DREAM
 
     .mainvisual
-      img.mainvisual__logo(src="/src/img/b03f59d5-74db-4db7-abfe-f2646b1eff67_200x200.png", alt="picture")
+      a(href="#" target="_blank"): img.mainvisual__logo.mainvisual__logo--animated(src="/src/img/b03f59d5-74db-4db7-abfe-f2646b1eff67_200x200.png", alt="picture")
     .concept
       .concept__inner
         h2.concept__section-container
@@ -90,31 +91,60 @@ html(lang="jp")
         img.activity__logo(src="/src/img/83c42d36-c7f3-464f-bc25-dc70d5e49185_200x200.png", alt="picture")
       ul.activity__list
         li.activity__item
-          img.activity__img(src="/src/img/omar-lopez-rwF_pJRWhAI-unsplash.jpg", alt="picture")
+          .activity__item-img
+            img.activity__img(src="/src/img/omar-lopez-rwF_pJRWhAI-unsplash.jpg", alt="picture")
           p.activity__text ENJOY
         li.activity__item 
-          img.activity__img(src="/src/img/kyle-glenn-nXt5HtLmlgE-unsplash.jpg", alt="picture")
+          .activity__item-img
+            img.activity__img.activity__img--secondly(src="/src/img/kyle-glenn-nXt5HtLmlgE-unsplash.jpg", alt="picture")
           p.activity__text WORLD
         li.activity__item 
-          img.activity__img(src="/src/img/fas-khan-zydtqCd0T3w-unsplash.jpg", alt="picture")
+          .activity__item-img
+            img.activity__img.activity__img--thirdly(src="/src/img/fas-khan-zydtqCd0T3w-unsplash.jpg", alt="picture")
           p.activity__text RELAX
 
       ul.activity__list.activity__list--secondly
         li.activity__item.activity__item--secondly
-          img.activity__img(src="/src/img/mihai-surdu-8H9ph_Jp3hA-unsplash.jpg", alt="picture")
+          .activity__item-img
+            img.activity__img(src="/src/img/mihai-surdu-8H9ph_Jp3hA-unsplash.jpg", alt="picture")
           p.activity__text INTERNATIONAL
         li.activity__item.activity__item--secondly
-          img.activity__img(src="/src/img/alexis-brown-omeaHbEFlN4-unsplash.jpg", alt="picture")
+          .activity__item-img
+            img.activity__img(src="/src/img/alexis-brown-omeaHbEFlN4-unsplash.jpg", alt="picture")
           p.activity__text EVERYDAY
     .dream
-      .dream__container
-        img.dream__img(src="/src/img/mihai-surdu-8H9ph_Jp3hA-unsplash.jpg", alt="picture")
-        p.dream__text 1.Language learning drive our life of motivation and become happy
-      .dream__container
-        .dream__container-text
-          p.dream__text
-        .dream__container-img
-          img.dream__img.dream__img--secondly(src="/src/img/mihai-surdu-8H9ph_Jp3hA-unsplash.jpg", alt="picture")
+
+      ul.dream__container
+        li.dream__item
+          a.dream__link(href="#" target="_blanks")
+            .dream__container-img
+              img.dream__img(src="/src/img/window-1148929_1280.jpg", alt="picture")
+            .dream__container-text
+              p.dream__number 1
+              p.dream__text Language learning drive our life of motivation and make us happy
+        li.dream__item
+           a.dream__link(href="#" target="_blank")
+            .dream__container-img
+              img.dream__img(src="/src/img/9cb3edfd-d8a9-4a00-b796-3d6b82cb6713.png", alt="picture")
+            .dream__container-text
+              p.dream__number 2
+              p.dream__text Gradually we can use other language in our daily life without forcing way 
+        li.dream__item
+          a.dream__link(href="#" target="_blanks")
+            .dream__container-img
+              img.dream__img(src="/src/img/you-x-ventures-0K7GgiA8lVE-unsplash.jpg", alt="picture")
+            .dream__container-text
+              p.dream__number 3
+              p.dream__text Any people can make an opportunity to use second language in their daily life like working 
+        li.dream__item
+           a.dream__link(href="#" target="_blank")
+            .dream__container-img
+              img.dream__img(src="/src/img/product-school-zFBVxClB2I8-unsplash.png", alt="picture")
+            .dream__container-text
+              p.dream__number 4
+              p.dream__text Finally we can lead a sustainable life and share our motivation to other people
+        
+        
       //- .dream__container
       //-   img.dream__img.dream__img--secondly(src="/src/img/mihai-surdu-8H9ph_Jp3hA-unsplash.jpg", alt="picture")
       //-   p.dream__text

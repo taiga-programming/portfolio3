@@ -6,19 +6,85 @@
   padding-top: 10rem;
   min-width: 100rem;
   padding-bottom: 10rem;
-
+   
   &__container {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
   }
 
-  &__img {
+  &__item {
     width: 50%;
-    transform: scale(1);
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  &:hover &__link {
+    color: #111;
+  }
+
+  &__container-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+  }
+
+  &__container-text {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    opacity: 0;    
+  }
+
+  &:hover &__container-text {
+    opacity: 100;
+    z-index: 10;
+  }
+
+  &__img {
+    backface-visibility: hidden;
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    filter: grayscale(100%);
   }
 
   &:hover &__img {
-    transform: scale(0.8);
-    transition: .3s ease-in-out;
+    opacity: 0.5;
+  }
+
+  &__number {
+    vertical-align: super;
+    font-weight: 700;
+    line-height: 120%;
+    font-size: 5rem;
+    font-family: "minion-pro-caption",serif;
+    margin-bottom: 4rem;
+  }
+
+  &__text {
+    font-weight: 900;
+    line-height: 120%;
+    font-size: 3.5rem;
+    font-family: "minion-pro-caption",serif;
+  }
+
+  &:hover &__text {
+    z-index: 1000;
   }
 }
