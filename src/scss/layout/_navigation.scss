@@ -9,10 +9,36 @@
 
   &__item {
    padding:0 1.2rem 0 1.2rem;
+   position: relative;
   }
 
-  &__text {
-    font-size: 2.2rem;
+  &__item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 0;
+    width: 100%;
+    transform: scaleY(-1);
+    transition: transform 1s, width .1s .10s;
+    background-color: rgba(0, 0, 0, 0.082);
+  }
 
+  &__item:hover::before {
+    transform: scaleY(1);
+    height: 100%;
+    color: #fff;
+  }
+
+  &__link {
+    font-size: 2.2rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    color: #333;
+    padding: 7.6rem 3rem 4rem 3rem;
   }
 }

@@ -4,6 +4,7 @@ html(lang="jp")
     title 
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet",href='/src/css/aos.css', type="text/css")
   body
     .header
       .header__inner
@@ -12,13 +13,15 @@ html(lang="jp")
            
         ul.navigation__list
           li.navigation__item 
-            p.navigation__text CONCEPT
+            a.navigation__link.navigation__(href="service.html" target="_blank")
           li.navigation__item 
-            p.navigation__text HISTORY
+            a.navigation__link(href="service.html" target="_blank") CONCEPT 
           li.navigation__item 
-            p.navigation__text ACTIVITY
+            a.navigation__link(href="#" target="_blank") HISTORY
           li.navigation__item 
-            p.navigation__text DREAM
+            a.navigation__link(href="#" target="_blank") ACTIVITY
+          li.navigation__item 
+            a.navigation__link(href="#" target="_blank") DREAM
 
     .mainvisual
       a(href="#" target="_blank"): img.mainvisual__logo.mainvisual__logo--animated(src="/src/img/b03f59d5-74db-4db7-abfe-f2646b1eff67_200x200.png", alt="picture")
@@ -34,16 +37,15 @@ html(lang="jp")
     .history
       h2.history__section-container
         img.history__logo(src="/src/img/d83f9b74-01b2-4854-a6b2-b745f743f07f_200x200.png", alt="picture")
+        .history__container-item(data-aos="fade-right")
+          .history__container-img--left
+            img.history__img(src="/src/img/way-918900_1280.jpg", alt="picture")
+          .history__container-text
+            p.history__text.history__text--body Hello .I'm taiga language learner .I started english  alsomst four years ago. Since then I started english i've been have a purpose in my life .
+        .history__container-logo
+          img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_0.png", alt="picture")
         
-      .history__container-item
-        .history__container-img--left
-          img.history__img(src="/src/img/way-918900_1280.jpg", alt="picture")
-        .history__container-text
-          p.history__text.history__text--body Hello .I'm taiga language learner .I started english  alsomst four years ago. Since I started english i've been have a purpose in my life .
-      .history__container-logo
-        img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_0.png", alt="picture")
-      
-      .history__container-item.history__container-item--secondly
+      .history__container-item.history__container-item--secondly(data-aos="fade-left")
         .history__container-text
           p.history__text.history__text--body I've done learning english more than 4 hours every day . I've taken advantage of Youtube and bbc news also other text-book.This year focused on Listening and writing.
         .history__container-img-right
@@ -51,7 +53,7 @@ html(lang="jp")
       .history__container-logo
         img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_5.png", alt="picture")
       
-      .history__container-item
+      .history__container-item.history__container-item--thirdly(data-aos="fade-right")
         .history__container-img--left
           img.history__img(src="/src/img/connect-20333_1280.jpg", alt="picture")
         .history__container-text
@@ -59,7 +61,7 @@ html(lang="jp")
       .history__container-logo
         img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_4.png", alt="picture")
       
-      .history__container-item
+      .history__container-item.history__container-item--forthly(data-aos="fade-left")
         .history__container-text
           p.history__text.history__text--body I started learning German and  programming in English .In this year I bought first laptop in my life.So i really straggled with even a typing.But gradually i understood like how to do capital c , where is question mark like that. Finally i could have operated my laptop as well as who can use laptop.
         .history__container-img-right
@@ -67,7 +69,7 @@ html(lang="jp")
       .history__container-logo
         img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_6.png", alt="picture")
       
-      .history__container-item
+      .history__container-item.container-item--fifthly(data-aos="fade-right")
         .history__container-img--left
           img.history__img(src="/src/img/fabian-grohs-XMFZqrGyV-Q-unsplash.jpg", alt="picture")
         .history__container-text
@@ -75,7 +77,7 @@ html(lang="jp")
       .history__container-logo
         img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_0-1.png", alt="picture")
       
-      .history__container-item
+      .history__container-item(data-aos="fade-left")
         .history__container-text
           p.history__text.history__text--body "Goal" I've accepted english examination .And I'll continue on programming on a udemy also make a some portfolio and learn UI design and UX design .And then finally wanna get a job as a programmer .
         .history__container-img-right
@@ -83,8 +85,7 @@ html(lang="jp")
       .history__container-comment
         p.history__comment My goal has been not changed since 4 years ago .#[br]My future goal is to move into  English country #[br]Also travel many countries.#[br]I want to do base on relax, enjoy, everyday.
       .history__container-greeting
-        p.history__greeting Thank you very much for visit this site ! , shall we learn with us ?
-        img.history__img.history__img--last(src="/src/img/capturing-the-human-heart-TrhLCn1abMU-unsplash.jpg", alt="picture")
+        p.history__greeting ＼ Thank you very much for visit this site ! , shall we learn with us ?／
     
     .activity
       h2.activity__section-container
@@ -102,7 +103,6 @@ html(lang="jp")
           .activity__item-img
             img.activity__img.activity__img--thirdly(src="/src/img/fas-khan-zydtqCd0T3w-unsplash.jpg", alt="picture")
           p.activity__text RELAX
-
       ul.activity__list.activity__list--secondly
         li.activity__item.activity__item--secondly
           .activity__item-img
@@ -112,8 +112,11 @@ html(lang="jp")
           .activity__item-img
             img.activity__img(src="/src/img/alexis-brown-omeaHbEFlN4-unsplash.jpg", alt="picture")
           p.activity__text EVERYDAY
+      ul.activity__list.activity__list--thirdly
+       
     .dream
-
+      h2.dream__container-section
+        img.dream__logo(src="/src/img/ad53d35d-2e4f-4dfa-a62d-693d2e8a4e71_200x200.png", alt="picture")
       ul.dream__container
         li.dream__item
           a.dream__link(href="#" target="_blanks")
@@ -143,7 +146,23 @@ html(lang="jp")
             .dream__container-text
               p.dream__number 4
               p.dream__text Finally we can lead a sustainable life and share our motivation to other people
-        
+    script(src="src/js/aos.js")
+    script.
+      AOS.init({
+        //- useClassNames: true,
+        //- initClassName: false,
+        //- animatedClassName: 'animated',
+        offset: 900,
+        duration: 1000
+      });
+    //-   $(document).ready(function(){
+    //-     $('.example__list').slick({
+    //-       prevArrow: '<img src="/src/img/left-arrow-icon.png" class="slide-arrow prev-arrow" style="display: block;  background: #a1000d;  width: 60px; height: 61px; border-radius: 40px; top: 238px; left: -42px;  position: absolute;">',
+    //-       nextArrow: '<img src="/src/img/right-arrow-icon.png" class="slide-arrow next-arrow" style="display: block;  background: #a1000d;  width: 60px; height: 61px; border-radius: 40px; top: 250px; right: -60px; position: absolute;">',
+    //-       slidesToShow:3,
+    //-       slidesToScroll:1 
+    //-     });
+    //-   });  
         
       //- .dream__container
       //-   img.dream__img.dream__img--secondly(src="/src/img/mihai-surdu-8H9ph_Jp3hA-unsplash.jpg", alt="picture")
