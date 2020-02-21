@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: initial;
-  padding-top: 10rem;
+  padding-top: 1.0rem;
   min-width: 100rem;
   padding-bottom: 10rem;
 
@@ -19,6 +19,12 @@
     display: flex;
     justify-content: center;
     list-style: none;
+
+    
+    // @include respond(tab-port) {
+    //   flex-direction: column;
+    //   justify-content: center;
+    // }
   }
 
   &__item {
@@ -44,18 +50,18 @@
   
   &__item-img {
     overflow: hidden;
-    width: 30rem;
+    width: 30%;
 	  height: 20rem;
   }
 
   &__img {
-    width: 30rem;
+    width: 30%;
     height: auto;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;  
   }
 
   &:hover &__img {
-    width: 35rem;
+    width: 35%;
   }
 }

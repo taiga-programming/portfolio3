@@ -11,6 +11,10 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 
   &__container-section {
@@ -21,6 +25,10 @@
 
   &__item {
     width: 50%;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 
   &__link {

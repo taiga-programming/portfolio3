@@ -6,86 +6,90 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     link(rel="stylesheet",href='/src/css/aos.css', type="text/css")
   body
-    .header
-      .header__inner
-        .header__logo-container 
-          img.header__logo(src="/src/img/d664c0d3-c210-4840-ad4d-972ee7e6ae46_200x200.png", alt="picture")
-        ul.navigation__list
-          li.navigation__item 
-            a.navigation__link(href="#" target="_blank") CONCEPT 
-          li.navigation__item 
-            a.navigation__link(href="#" target="_blank") HISTORY
-          li.navigation__item 
-            a.navigation__link(href="#" target="_blank") ACTIVITY
-          li.navigation__item 
-            a.navigation__link(href="#" target="_blank") DREAM
+    .navigation
+      ul.navigation__list
+        li.navigation__item 
+          img.navigation__logo(src="/src/img/d664c0d3-c210-4840-ad4d-972ee7e6ae46_200x200.png", alt="picture")
+        li.navigation__item   
+          a.navigation__link(href="#concept" target="_concept") CONCEPT 
+        li.navigation__item 
+          a.navigation__link(href="#history" target="_history") HISTORY
+        li.navigation__item 
+          a.navigation__link(href="#activity" target="_activity") ACTIVITY
+        li.navigation__item 
+          a.navigation__link(href="#dream" target="_dream") DREAM
+      ul.navigation__list.navigation__list--open
+        li.navigation__fade
+          a.navigation__link.navigation__link--open(href="#" target="_blank") 
+      .hamburgermenu
+        .hamburgermenu__line
+        .hamburgermenu__line
+        .hamburgermenu__line
     .mainvisual
       a(href="#" target="_blank"): img.mainvisual__logo.mainvisual__logo--animated(src="/src/img/b03f59d5-74db-4db7-abfe-f2646b1eff67_200x200.png", alt="picture")
-    .concept
+    .concept(id="concept")
       .concept__inner
         h2.concept__section-container
           img.concept__logo(src="/src/img/595d322e-8f7d-46fc-b592-9225af33f22f_200x200.png", alt="picture")
-        .concept__body(data-aos="fade-left",data-aos-duration="0", offset ="50",delay="0")
+        .concept__body
           p.concept__date April.2016
           p.concept__keywords ENJOY, RELAX, EVERYDAY
           p.concept__longtext This is a concept of this community#[br]This community is made by me #[br]Why did this community is made ?#[br] Firstly, I want to want to spice up my life. #[br]Seconcly, Make an opportunity to use other language #[br]Thirdly, Communicate with other language people anywhere 
           
-    .history
+    .history(id="history")
       h2.history__section-container
-        img.history__logo(src="/src/img/d83f9b74-01b2-4854-a6b2-b745f743f07f_200x200.png", alt="picture",data-aos="fade-left",data-aos-duration="0", offset ="50",delay="0")
-        .history__container-item(data-aos="fade-right")
+        //- img.history__logo(src="/src/img/d83f9b74-01b2-4854-a6b2-b745f743f07f_200x200.png", alt="picture")
+        .history__container-item(data-aos="fade-left")
           .history__container-img--left
             img.history__img(src="/src/img/way-918900_1280.jpg", alt="picture")
           .history__container-text
             p.history__text.history__text--body Hello .I'm taiga language learner .I started english  alsomst four years ago. Since then I started english i've been have a purpose in my life .
         .history__container-logo
           img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_0.png", alt="picture")
+          
+        .history__container-item(data-aos="fade-right")
+          .history__container-text
+            p.history__text.history__text--body I've done learning english more than 4 hours every day . I've taken advantage of Youtube and bbc news also other text-book.This year focused on Listening and writing.
+          .history__container-img-right
+            img.history__img.history__img--secondly(src="/src/img/books-1149959_1280.jpg", alt="picture")
+        .history__container-logo
+          img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_5.png", alt="picture")
         
-      .history__container-item(data-aos="fade-left")
-        .history__container-text
-          p.history__text.history__text--body I've done learning english more than 4 hours every day . I've taken advantage of Youtube and bbc news also other text-book.This year focused on Listening and writing.
-        .history__container-img-right
-          img.history__img.history__img--secondly(src="/src/img/books-1149959_1280.jpg", alt="picture")
-      .history__container-logo
-        img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_5.png", alt="picture")
+        .history__container-item(data-aos="fade-left")
+          .history__container-img--left
+            img.history__img(src="/src/img/connect-20333_1280.jpg", alt="picture")
+          .history__container-text
+            p.history__text.history__text--body I had been learning english 4 hours by using a hello talk and YouTube and reading westernbook. I've started to read "Harry Potter" for the first time in my life.Also i started French from my interest.And I realized French and English have a lot of similarities compare with japanese.
+        .history__container-logo
+          img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_4.png", alt="picture")
       
-      .history__container-item(data-aos="fade-right")
-        .history__container-img--left
-          img.history__img(src="/src/img/connect-20333_1280.jpg", alt="picture")
-        .history__container-text
-          p.history__text.history__text--body I had been learning english 4 hours by using a hello talk and YouTube and reading westernbook. I've started to read "Harry Potter" for the first time in my life.Also i started French from my interest.And I realized French and English have a lot of similarities compare with japanese.
-      .history__container-logo
-        img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_4.png", alt="picture")
+        .history__container-item(data-aos="fade-right")
+          .history__container-text
+            p.history__text.history__text--body I started learning German and  programming in English .In this year I bought first laptop in my life.So i really straggled with even a typing.But gradually i understood like how to do capital c , where is question mark like that. Finally i could have operated my laptop as well as who can use laptop.
+          .history__container-img-right
+            img.history__img(src="/src/img/anika-huizinga-RmzR87vTiYw-unsplash.jpg", alt="picture")
+        .history__container-logo
+          img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_6.png", alt="picture")
       
-      .history__container-item(data-aos="fade-left")
-        .history__container-text
-          p.history__text.history__text--body I started learning German and  programming in English .In this year I bought first laptop in my life.So i really straggled with even a typing.But gradually i understood like how to do capital c , where is question mark like that. Finally i could have operated my laptop as well as who can use laptop.
-        .history__container-img-right
-          img.history__img(src="/src/img/anika-huizinga-RmzR87vTiYw-unsplash.jpg", alt="picture")
-      .history__container-logo
-        img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_6.png", alt="picture")
+        .history__container-item(data-aos="fade-left")
+          .history__container-img--left
+            img.history__img(src="/src/img/fabian-grohs-XMFZqrGyV-Q-unsplash.jpg", alt="picture")
+          .history__container-text
+            p.history__text.history__text--body I realized that latin language has etymology .So I looked up on the internet about etymology.I went to abroad for the first time(Manila.Philippine ). And I've felt that pronounciation was very important through intern.
+        .history__container-logo
+          img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_0-1.png", alt="picture")
       
-      .history__container-item(data-aos="fade-right")
-        .history__container-img--left
-          img.history__img(src="/src/img/fabian-grohs-XMFZqrGyV-Q-unsplash.jpg", alt="picture")
-        .history__container-text
-          p.history__text.history__text--body I realized that latin language has etymology .So I looked up on the internet about etymology.I went to abroad for the first time(Manila.Philippine ). And I've felt that pronounciation was very important through intern.
-      .history__container-logo
-        img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_0-1.png", alt="picture")
-      
-      .history__container-item(data-aos="fade-left")
-        .history__container-text
-          p.history__text.history__text--body "Goal" I've accepted english examination .And I'll continue on programming on a udemy also make a some portfolio and learn UI design and UX design .And then finally wanna get a job as a programmer .
-        .history__container-img-right
-          img.history__img(src="/src/img/mantas-hesthaven-_g1WdcKcV3w-unsplash.jpg", alt="picture")
-      .history__container-comment
-        p.history__comment My goal has been not changed since 4 years ago .#[br]My future goal is to move into  English country #[br]Also travel many countries.#[br]I want to do base on relax, enjoy, everyday.
-      .history__container-greeting
-        p.history__greeting ＼ Thank you very much for visit this site ! , shall we learn with us ?／
+        .history__container-item(data-aos="fade-right")
+          .history__container-text
+            p.history__text.history__text--body "Goal" I've accepted english examination .And I'll continue on programming on a udemy also make a some portfolio and learn UI design and UX design .And then finally wanna get a job as a programmer .
+          .history__container-img-right
+            img.history__img(src="/src/img/mantas-hesthaven-_g1WdcKcV3w-unsplash.jpg", alt="picture")
+        .history__container-comment
+          p.history__comment My goal has been not changed since 4 years ago .#[br]My future goal is to move into  English country #[br]Also travel many countries.#[br]I want to do base on relax, enjoy, everyday.
+        .history__container-greeting
+          p.history__greeting ＼ Thank you very much for visit this site ! , shall we learn with us ?／
     
-    .activity
-      h2.activity__section-container
-        img.activity__logo(src="/src/img/83c42d36-c7f3-464f-bc25-dc70d5e49185_200x200.png", alt="picture")
+    .activity(id="activity")
       ul.activity__list
         li.activity__item
           .activity__item-img
@@ -108,11 +112,12 @@ html(lang="en")
           .activity__item-img
             img.activity__img(src="/src/img/alexis-brown-omeaHbEFlN4-unsplash.jpg", alt="picture")
           p.activity__text EVERYDAY
-      ul.activity__list.activity__list--thirdly
-       
-    .dream
-      //- h2.dream__container-section
-      //-   img.dream__logo(src="/src/img/ad53d35d-2e4f-4dfa-a62d-693d2e8a4e71_200x200.png", alt="picture")
+        li.activity__item.activity__item--secondly
+          .activity__item-img
+            img.activity__img(src="/src/img/alexis-brown-omeaHbEFlN4-unsplash.jpg", alt="picture")
+          p.activity__text EVERYDAY
+  
+    .dream(id="dream")
       ul.dream__container
         li.dream__item
           a.dream__link(href="#" target="_blanks")
