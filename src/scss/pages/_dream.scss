@@ -1,10 +1,11 @@
 .dream {
-  background: #fff;
+  background: #dfe6e9;
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: initial;
-  padding-top: 10rem;
+  // padding-top: 10rem;
   min-width: 100rem;
+  filter: grayscale(100%);
    
   &__container {
     display: flex;
@@ -29,10 +30,7 @@
     height: 100%;
     overflow: hidden;
     text-decoration: none;
-  }
-
-  &:hover &__link {
-    color: #111;
+    
   }
 
   &__container-img {
@@ -55,11 +53,6 @@
     opacity: 0;    
   }
 
-  &:hover &__container-text {
-    opacity: 100;
-    z-index: 10;
-  }
-
   &__img {
     backface-visibility: hidden;
     display: block;
@@ -67,10 +60,6 @@
     width: 100%;
     opacity: 1;
     filter: grayscale(100%);
-  }
-
-  &:hover &__img {
-    opacity: 0.5;
   }
 
   &__number {

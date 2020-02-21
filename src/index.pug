@@ -1,5 +1,5 @@
 doctype html
-html(lang="jp")
+html(lang="en")
   head
     title 
     meta(charset="utf-8")
@@ -10,33 +10,29 @@ html(lang="jp")
       .header__inner
         .header__logo-container 
           img.header__logo(src="/src/img/d664c0d3-c210-4840-ad4d-972ee7e6ae46_200x200.png", alt="picture")
-           
         ul.navigation__list
           li.navigation__item 
-            a.navigation__link.navigation__(href="service.html" target="_blank")
-          li.navigation__item 
-            a.navigation__link(href="service.html" target="_blank") CONCEPT 
+            a.navigation__link(href="#" target="_blank") CONCEPT 
           li.navigation__item 
             a.navigation__link(href="#" target="_blank") HISTORY
           li.navigation__item 
             a.navigation__link(href="#" target="_blank") ACTIVITY
           li.navigation__item 
             a.navigation__link(href="#" target="_blank") DREAM
-
     .mainvisual
       a(href="#" target="_blank"): img.mainvisual__logo.mainvisual__logo--animated(src="/src/img/b03f59d5-74db-4db7-abfe-f2646b1eff67_200x200.png", alt="picture")
     .concept
       .concept__inner
         h2.concept__section-container
           img.concept__logo(src="/src/img/595d322e-8f7d-46fc-b592-9225af33f22f_200x200.png", alt="picture")
-        .concept__body
+        .concept__body(data-aos="fade-left",data-aos-duration="0", offset ="50",delay="0")
           p.concept__date April.2016
           p.concept__keywords ENJOY, RELAX, EVERYDAY
           p.concept__longtext This is a concept of this community#[br]This community is made by me #[br]Why did this community is made ?#[br] Firstly, I want to want to spice up my life. #[br]Seconcly, Make an opportunity to use other language #[br]Thirdly, Communicate with other language people anywhere 
           
     .history
       h2.history__section-container
-        img.history__logo(src="/src/img/d83f9b74-01b2-4854-a6b2-b745f743f07f_200x200.png", alt="picture")
+        img.history__logo(src="/src/img/d83f9b74-01b2-4854-a6b2-b745f743f07f_200x200.png", alt="picture",data-aos="fade-left",data-aos-duration="0", offset ="50",delay="0")
         .history__container-item(data-aos="fade-right")
           .history__container-img--left
             img.history__img(src="/src/img/way-918900_1280.jpg", alt="picture")
@@ -45,7 +41,7 @@ html(lang="jp")
         .history__container-logo
           img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_0.png", alt="picture")
         
-      .history__container-item.history__container-item--secondly(data-aos="fade-left")
+      .history__container-item(data-aos="fade-left")
         .history__container-text
           p.history__text.history__text--body I've done learning english more than 4 hours every day . I've taken advantage of Youtube and bbc news also other text-book.This year focused on Listening and writing.
         .history__container-img-right
@@ -53,7 +49,7 @@ html(lang="jp")
       .history__container-logo
         img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_5.png", alt="picture")
       
-      .history__container-item.history__container-item--thirdly(data-aos="fade-right")
+      .history__container-item(data-aos="fade-right")
         .history__container-img--left
           img.history__img(src="/src/img/connect-20333_1280.jpg", alt="picture")
         .history__container-text
@@ -61,7 +57,7 @@ html(lang="jp")
       .history__container-logo
         img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_4.png", alt="picture")
       
-      .history__container-item.history__container-item--forthly(data-aos="fade-left")
+      .history__container-item(data-aos="fade-left")
         .history__container-text
           p.history__text.history__text--body I started learning German and  programming in English .In this year I bought first laptop in my life.So i really straggled with even a typing.But gradually i understood like how to do capital c , where is question mark like that. Finally i could have operated my laptop as well as who can use laptop.
         .history__container-img-right
@@ -69,7 +65,7 @@ html(lang="jp")
       .history__container-logo
         img.history__logo.history__logo--secondly(src="/src/img/_r_ribbon0415_s512_ribbon0415_6.png", alt="picture")
       
-      .history__container-item.container-item--fifthly(data-aos="fade-right")
+      .history__container-item(data-aos="fade-right")
         .history__container-img--left
           img.history__img(src="/src/img/fabian-grohs-XMFZqrGyV-Q-unsplash.jpg", alt="picture")
         .history__container-text
@@ -115,8 +111,8 @@ html(lang="jp")
       ul.activity__list.activity__list--thirdly
        
     .dream
-      h2.dream__container-section
-        img.dream__logo(src="/src/img/ad53d35d-2e4f-4dfa-a62d-693d2e8a4e71_200x200.png", alt="picture")
+      //- h2.dream__container-section
+      //-   img.dream__logo(src="/src/img/ad53d35d-2e4f-4dfa-a62d-693d2e8a4e71_200x200.png", alt="picture")
       ul.dream__container
         li.dream__item
           a.dream__link(href="#" target="_blanks")
@@ -126,10 +122,10 @@ html(lang="jp")
               p.dream__number 1
               p.dream__text Language learning drive our life of motivation and make us happy 
         li.dream__item
-           a.dream__link(href="#" target="_blank")
+           a.dream__link.dream__link--secondly(href="#" target="_blank")
             .dream__container-img
-              img.dream__img(src="/src/img/9cb3edfd-d8a9-4a00-b796-3d6b82cb6713.png", alt="picture")
-            .dream__container-text
+              img.dream__img.dream__img--secondly(src="/src/img/9cb3edfd-d8a9-4a00-b796-3d6b82cb6713.png", alt="picture")
+            .dream__container-text.dream__container-text--secondly
               p.dream__number 2
               p.dream__text Gradually we can use other language in our daily life without forcing way 
         li.dream__item
@@ -146,208 +142,11 @@ html(lang="jp")
             .dream__container-text
               p.dream__number 4
               p.dream__text Finally we can lead a sustainable life and share our motivation to other people
-    script(src="src/js/aos.js")
-    script.
-      AOS.init({
-        //- useClassNames: true,
-        //- initClassName: false,
-        //- animatedClassName: 'animated',
-        offset: 900,
-        duration: 1000
-      });
-    //-   $(document).ready(function(){
-    //-     $('.example__list').slick({
-    //-       prevArrow: '<img src="/src/img/left-arrow-icon.png" class="slide-arrow prev-arrow" style="display: block;  background: #a1000d;  width: 60px; height: 61px; border-radius: 40px; top: 238px; left: -42px;  position: absolute;">',
-    //-       nextArrow: '<img src="/src/img/right-arrow-icon.png" class="slide-arrow next-arrow" style="display: block;  background: #a1000d;  width: 60px; height: 61px; border-radius: 40px; top: 250px; right: -60px; position: absolute;">',
-    //-       slidesToShow:3,
-    //-       slidesToScroll:1 
-    //-     });
-    //-   });  
-        
-      //- .dream__container
-      //-   img.dream__img.dream__img--secondly(src="/src/img/mihai-surdu-8H9ph_Jp3hA-unsplash.jpg", alt="picture")
-      //-   p.dream__text
+  script(src="src/js/switch-picture.js")
+  script(src="src/js/aos.js")
+  script.
+    AOS.init ({
+      offset: 700,
+      duration: 400
+    });
 
-    //-   .activity__container
-    //-     .activity__whole-item
-    //-       img.activity__img.activity__img--seconldy(src="/src/img/paters-6.jpg", alt="picture")
-    //-       .activity__whole-item-body 
-    //-         p.activity__title Cafe & Bar PATERS
-    //-         p.activity__text.activity__text--secondly 
-    //-         ul.activity__list.acitvity__list--secondly
-    //-           li.activity__item.activity__item--secondly
-    //-             p.activity__text.activity__text--tertiary 
-    //-           li.activity__item.activity__item--secondly
-    //-             p.activity__text.activity__text--tertiary  
-    //-           li.activity__item.activity__item--secondly
-    //-             p.activity__text.activity__text--tertiary 
-    //-     ul.activity__list.acitvity__list--tertiary
-    //-       li.activity__item.activity__item--tertiary
-    //-         img.activity__logo.activity__logo--secondly(src="/src/img/b-1.jpg", alt="picture")
-    //-       li.activity__item.activity__item--tertiary
-    //-         img.activity__logo.activity__logo--secondly(src="/src/img/b-2.jpg", alt="picture")
-    //-       li.activity__item.activity__item--tertiary
-    //-         img.activity__logo.activity__logo--secondly(src="/src/img/b-3.jpg", alt="picture")
-    //-   .activity__whole-item.activity__whole-item--secondly
-    //-     img.activity__img.activity__img--tertiary(src="/src/img/activity2.jpg", alt="picture")
-    //-     .activity__whole-item-body.activity__whole-item-body--seondly
-    //-       p.activity__title.activity__title--secondly 
-    //-       p.activity__text.activity__text--fourthly 
-    //-       img.activity__img.activity__img--fourthly(src="/src/img/b-5.jpg", alt="picture")
-    //-       ul.activity__list.activity__list--fourthly
-    //-         li.activity__item.activity__item--fourthly
-    //-           img.activity__logo.activity__logo--tertiary(src="/src/img/b-5.jpg", alt="picture")
-    //-         li.activity__item.activity__item--fourthly
-    //-           img.activity__logo.activity__logo--tertiary(src="/src/img/b-5.jpg", alt="picture")
-    //-         li.activity__item.activity__item--fourthly
-    //-           img.activity__logo.activity__logo--tertiary(src="/src/img/b-5.jpg", alt="picture")
-    //-   .activity__whole-item.activity__whole-item--secondly
-    //-     img.activity__img.activity__img--forthly(src="/src/img/activity3.jpg", alt="picture")
-    //-     .activity__whole-item-body.activity__whole-item-body--tertiary
-    //-       p.activity__title.activity__title--secondly 
-    //-       p.activity__text.activity__text--fifthly 
-    //-       img.activity__logo.activity__logo--fourthly(src="/src/img/b-6.jpg", alt="picture")
-    //-   .activity__whole-item.activity__whole-item--tertiary
-    //-     img.activity__img.activity__img--fifthly(src="/src/img/activity4.jpg", alt="picture")
-    //-     .activity__whole-item-body.activity__whole-item-body--tertiary
-    //-       p.activity__title.activity__title--tertiary 
-    //-       p.activity__text.activity__text--sixthly 
-    //-   .activity__whole-item.activity__whole-item--tertiary
-    //-     img.activity__img.activity__img--sixthly(src="/src/img/activity5.jpg", alt="picture")
-    //-     .activity__whole-item-body.activity__whole-item-body--fourthly
-    //-       p.activity__title.activity__title--fourthly 
-    //-       p.activity__text.activity__text--seventhly 
-    //- .member
-    //-   img.member__img(src="/src/img/t-3.png", alt="picture")
-    //-   p.member__text 
-    //-   ul.member__list 
-    //-     li.member__item 
-    //-       img.member__img(src="/src/img/m-1.jpg", alt="picture")
-    //-       .member__container
-    //-         p.member__text たに
-    //-         img.memver__logo(src="/src/img/component.png", alt="picture")
-    //-       p.member__body-text 
-    //-       p.member__body-text.member__body-text--2 
-    //-       a.meber__link(href="#") 
-    //-     li.member__item 
-    //-       img.member__img(src="/src/img/m-2.jpg", alt="picture")
-    //-       .member__container
-    //-         p.member__text しみ
-    //-         img.memver__logo(src="/src/img/component.png", alt="picture")
-    //-         p.member__body-text 
-    //-       a.meber__link(href="#") 
-    //-     li.member__item 
-    //-       img.member__logo(src="/src/img/m-3.jpg", alt="picture")
-    //-       .member__container
-    //-         p.member__text はやて
-    //-         img.member__img(src="/src/img/component.png", alt="picture")
-    //-         p.member__body-text 
-    //-       a.member__link(href="#") 
-    //-     li.member__item 
-    //-       img.member__img(src="/src/img/m-4.jpg", alt="picture")
-    //-       .member__container
-    //-         p.member__text ユウキ
-    //-         img.memver__logo(src="/src/img/component.png", alt="picture")
-    //-         p.member__body-text ぺーたーずのおてんば娘。人と旅とワクワクが好き。縁を紡ぐソーシャルヒッピー。米州立大学中退後のセブ留学と日本各地の住み歩きを経て、自由と愛と自然のヒッピーが覚醒。お志事は「スキを好きなだけ」シェアハウス経営/日英翻訳ライター/セブ留学エージェント がメイン。たったひとりではじめたら、大事な人がたくさんに。シェアハウス開業後ぺーたーずへ。そこで疾風と付き合い 12日で電撃結婚、2018年11月には第一子「祭人(まつり)♂」をシェアハウスで自宅出産＆子育て予定。感情が産地直送でよく笑い怒り泣きます。ラムネとアイスが大好物♡
-    //-       a.member__link(href="#") ブログ： あたまのなかハッピーセット
-    //-   ul.member__list.member__list--secondly
-    //-     li.member__item.memeber__item--secondly 
-    //-       img.member__img.member__img--secondly(src="/src/img/m-5.jpg", alt="picture")
-    //-       .member__container.member__container--secondly
-    //-         p.member__text ごんちゃん
-    //-         img.memver__logo(src="/src/img/component.png", alt="picture")
-    //-         p.member__body-text ぺーたーず店長。沖縄県出身のラッパー。沖縄よしもと1期生 / 元お笑い芸人。即興パフォーマー。アル中
-    //-         p.member__body-text.member__body-text--secondly 人との出会いと飲みが大好き。出会った人たちに元気と笑いを届けたい、南国育ちの陽気な酔っぱらいボーイ。
-    //-     li.member__item.memeber__item--secondly 
-    //-       img.member__img.member__img--secondly(src="/src/img/m-6.jpg", alt="picture")
-    //-       .member__container.member__container--secondly
-    //-         p.member__text ジロ
-    //-         img.memver__logo(src="/src/img/component.png", alt="picture")
-    //-         p.member__body-text ぺーたーずTVのボケ担当。クールな変態紳士。横浜出身。就活から逃げて、海外3年間逃亡の後に、横浜にバー「イプシロン」とシェアハウス「リバ邸カオス」をオープン
-    //-     li.member__item.memeber__item--secondly 
-    //-       img.member__img.member__img--secondly(src="/src/img/m-7.jpg", alt="picture")
-    //-       .member__container.member__container--secondly
-    //-         p.member__text あちゃこ
-    //-         img.memver__logo(src="/src/img/component.png", alt="picture")
-    //-         p.member__body-text スポーツ業界で働くたぬき型ロボット。3歳から始めた空手は全国優勝経験有り。プライドは皆無だが、運動能力が無駄に高い。PATERSのコアメンバーゆうきちゃんが運営するシェアハウス「東京未来人アジト」の住人。OVERALLのデニム濃い人。スポーツ・映画館・TOY STORY・筋肉が好き。専門は空手だが、見た目はサーファー。肌が黒い。とにかく黒い。
-    //-         a.member__link(href="#") ブログ： あたまのなかハッピーセット
-    //-     li.member__item.memeber__item--secondly 
-    //-      img.member__img.member__img--secondly(src="/src/img/m-8.jpg", alt="picture")
-    //-      .member__container.member__container--secondly
-    //-         p.member__text けんわたなーべ
-    //-         img.memver__logo(src="/src/img/component.png", alt="picture")
-    //-         p.member__body-text 食と旅と歌とディズニーをこよなく愛するフリーライター兼カメラマン。複数webメディアで執筆しながらプロフィール写真の撮影から取材撮影を行なっている。海外に憧れカンボジアに就職するも3ヶ月でクビ。帰国後、時間と場所にとらわれない働き方を目指し、フリーライターになる。「好きなことで誰かのきっかけになる」が人生のテーマ。年パス持ちのディズニーオタクで、週に1度は舞浜に行かないと発作を起こすという持病を持っている。エレクトリカルパレード待ちながら仕事してたりする。
-    //-     li.member__item.memeber__item--secondly 
-    //-       img.member__img.member__img--secondly(src="/src/img/m-9.jpg", alt="picture")
-    //-       .member__container.member__container--secondly
-    //-         p.member__text れいさっち
-    //-         img.memver__logo(src="/src/img/component.png", alt="picture")
-    //-         p.member__body-text 自分自身を自由に表現することを楽しんでいる人。岐阜県生まれ神奈川県育ち。大卒後、夜のお仕事を経てリラクゼーションサロンを開業するが１年で閉業。ダンスインストラクター/パフォーマー/ホステス/リラクゼーションサロンセラピスト/フィーリングアーティスト などいろいろな経歴を持つ。自分を例えるなら「月と太陽」好きなことは、ひととお話ししてそのひとの本質を探ってキラキラを引き出すこと。好きなものはきれいな海と世界に一つしかないもの。
-    //-     li.member__item.memeber__item--secondly 
-    //-       img.member__img.member__img--secondly(src="/src/img/m-10.jpg", alt="picture")
-    //-       .member__container.member__container--secondly
-    //-         p.member__text シオリーヌ
-    //-         img.memver__logo(src="/src/img/component.png", alt="picture")
-    //-         p.member__body-text 助産師&精神科ナースみなさんこんにちは、シオリーヌです！病棟看護師として働きながら、性教育の講師活動をしています。ぺーたーずでは性について気軽にオープンに語り合うイベントなど定期的に開催しているので、遊びにきてくれると嬉しいです！趣味は音楽、お笑い、おしゃべり！しみ率いるDJ & パフォーマンスグループ「OVERALL」の一員でもあります。たくさんの人と出会える大好きな居場所、ぺーたーず。ぜひ一緒に、楽しい時間を過ごしましょう！
-    //-     li.member__item.memeber__item--secondly 
-    //-       img.member__img.member__img--secondly(src="/src/img/m-11.jpg", alt="picture")
-    //-       .member__container.member__container--secondly
-    //-         p.member__text シオリーヌ
-    //-         img.memver__logo(src="/src/img/component.png", alt="picture")
-    //-         p.member__body-text ーたーずの縁の下の力持ちデッカい裏方としてイベントのサポートや写真・動画を撮影し、みなさんの楽しい時間の共有に役立つネタを集めてます。ぺーたーずが自由に踊り踊ってることが、一番楽しいのでそのための準備は欠かさず行います！普段は会社員として清掃業界から環境問題に貢献しエシカルやSDGsやESG投資にも積極的に活動しています！企業や一般の人にも環境問題の取り組みが大事な中で、皆さんが「どんなことしたらいいんだろう？」と分からない時には、ぜひ声をかけて下さい！皆さんにも出来る事が必ずあります！
-    //-     li.member__item.memeber__item--secondly 
-    //-       img.member__img.member__img--secondly(src="/src/img/m-12.jpg", alt="picture")
-    //-       .member__container.member__container--secondly
-    //-         p.member__text ジュンキ
-    //-         img.memver__logo(src="/src/img/component.png", alt="picture")
-    //-         p.member__body-text ぺーたーずの縁の下の力持ちデッカい裏方としてイベントのサポートや写真・動画を撮影し、みなさんの楽しい時間の共有に役立つネタを集めてます。ぺーたーずが自由に踊り踊ってることが、一番楽しいのでそのための準備は欠かさず行います！普段は会社員として清掃業界から環境問題に貢献しエシカルやSDGsやESG投資にも積極的に活動しています！企業や一般の人にも環境問題の取り組みが大事な中で、皆さんが「どんなことしたらいいんだろう？」と分からない時には、ぜひ声をかけて下さい！皆さんにも出来る事が必ずあります！
-    //-     li.member__item.memeber__item--secondly 
-    //-       img.member__img.member__img--secondly(src="/src/img/m-13.jpg", alt="picture")
-    //-       .member__container.member__container--secondly
-    //-         p.member__text たけるん
-    //-         img.memver__logo(src="/src/img/component.png", alt="picture")
-    //-         p.member__body-text みんなの笑顔が宝物！いつもパジャマで生活しているしあわせのパジャマニンゲン。元ギャル男で元板前。ファッションデザイナー。自由人に見えて仕事人。ジブリのことを語らせたらやたら細かい。ラピュタに住んだ経験あり。(ほんまやで？)
-    //- .news
-    //-   img.news__img(src="/src/img/t-5.png", alt="picture")
-    //-   .news__container
-    //-     p.news__time 2017/5/10
-    //-     a.news__text(href="#") 『Cafe ＆ Bar PATERS』遂にオープンしました！
-    //- .sponser
-    //-   img.sponser__logo(src="/src/img/t-7.png", alt="picture")
-    //-   img.sponser__img(src="/src/img/banner.jpg", alt="picture")
-    //- .footer
-    //-   .footer__memu
-    //-     ul.footer__nav-sns
-    //-       li.footer__nav-sns-item
-    //-         img.footer__nav-logo(src="/src/img/i-twitter.png", alt="picture")
-    //-       li.footer__nav-sns-item
-    //-         img.footer__nav-logo(src="/src/img/i-facebook.png", alt="picture")
-    //-       li.footer__nav-sns-item
-    //-         img.footer__nav-logo(src="/src/img/i-instagram.png", alt="picture")
-    //-     ul.footer__nav-menu-item
-    //-       li.footer__nav-menu-item
-    //-         p.footer__nav-text コンセプト
-    //-       li.footer__nav-menu-item
-    //-         p.footer__nav-text 歴史
-    //-       li.footer__nav-menu-item
-    //-         p.footer__nav-text 活動内容
-    //-       li.footer__nav-menu-item
-    //-         p.footer__nav-text メンバー
-    //-       li.footer__nav-menu-item
-    //-         p.footer__nav-text お知らせ
-    //-       li.footer__nav-menu-item
-    //-         p.footer__nav-text カレンダー
-    //-       li.footer__nav-menu-item
-    //-         p.footer__nav-text スポンサー
-    //-   .footer__bottom
-    //-     p.footer__bottom-text Copyright © PATERS All Rights Reserved.
-    //-     .footer__bottom-container
-    //-       .footer__bottom-text.footer__bottom-text--secondly
-    //-         p.footer__bottom-text Design:
-    //-         a.footer__bottom-link(href="#") CHIZUMI
-    //-         p.footer__bottom-text lllust:
-    //-         a.footer__bottom-link(href="#") CAORU
-    //-         p.footer__bottom-text Coding:
-    //-         a.footer__bottom-link(href="#") HANIWAMAN
-    //-         p.footer__bottom-text Produce:
-    //-           a.footer__bottom-link(href="#") CLAY
