@@ -1,17 +1,38 @@
-.hamburgermenu {
-   
-  //  position: absolute;
-  //  cursor: pointer;
-  //  right: 5%;
-  //  top: 50%;
-  //  transform: translate(-5%, -50%);
-  //  z-index: 2;
+// .hamburgermenu {
+//   display: none;
+ 
+//   @include respond(tab-port) {
+//     display: block;
+//     padding: 10px;
+//     box-sizing: border-box;
+//   }
 
-  &__line {
-    //responsive 
-    // width: 30px;
-    // height: 3px;
-    // background: white;
-    // margin: 5px;
-  }
-}
+//   &__switch {
+
+//     @include respond(tab-port) {
+//       position: relative;
+//       width: auto;
+//       height: 100%;
+//       display: inline-block;
+//       width: 60px;
+//       right: 0;
+//       margin-right: 18px;
+//     }
+//   }
+   
+
+//   &__line {
+
+//    @include respond(tab-port) {
+//       width: 100%;
+//       height: 3px;
+//       background: #cd282d;
+//       top: 0;
+//       bottom: 0;
+//       left: 0;
+//       right: 0;
+//       opacity: 1;
+//       display: inline-block;
+//     }
+//   }
+// }

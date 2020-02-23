@@ -6,10 +6,10 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     link(rel="stylesheet",href='/src/css/aos.css', type="text/css")
   body
-    .navigation
+    .navigation(id="navigation")
       ul.navigation__list
         li.navigation__item 
-          img.navigation__logo(src="/src/img/d664c0d3-c210-4840-ad4d-972ee7e6ae46_200x200.png", alt="picture")
+          a.navigation__container(href="#navigation" target="_navigation"): img.navigation__logo(src="/src/img/d664c0d3-c210-4840-ad4d-972ee7e6ae46_200x200.png", alt="picture")
         li.navigation__item   
           a.navigation__link(href="#concept" target="_concept") CONCEPT 
         li.navigation__item 
@@ -22,9 +22,10 @@ html(lang="en")
         li.navigation__fade
           a.navigation__link.navigation__link--open(href="#" target="_blank") 
       .hamburgermenu
-        .hamburgermenu__line
-        .hamburgermenu__line
-        .hamburgermenu__line
+        .hamburgermenu__switch
+          .hamburgermenu__line 
+          .hamburgermenu__line 
+          .hamburgermenu__line
     .mainvisual
       a(href="#" target="_blank"): img.mainvisual__logo.mainvisual__logo--animated(src="/src/img/b03f59d5-74db-4db7-abfe-f2646b1eff67_200x200.png", alt="picture")
     .concept(id="concept")
@@ -148,10 +149,11 @@ html(lang="en")
               p.dream__number 4
               p.dream__text Finally we can lead a sustainable life and share our motivation to other people
   script(src="src/js/switch-picture.js")
+  script(src="src/js/zoomin.js")
   script(src="src/js/aos.js")
   script.
     AOS.init ({
-      offset: 700,
+      offset: 500,
       duration: 400
     });
 

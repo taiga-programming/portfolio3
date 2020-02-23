@@ -1,9 +1,9 @@
 .activity {
-  background: #fff;
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: initial;
-  padding-top: 1.0rem;
+  padding-top: 10rem;
   min-width: 100rem;
   padding-bottom: 10rem;
 
@@ -45,23 +45,18 @@
   &:hover &__text {
     margin-top: 1rem;
     background-color: #777;
-    color: #e74c3c;
   }
   
   &__item-img {
     overflow: hidden;
-    width: 30%;
+    width: 30rem;
 	  height: 20rem;
   }
 
   &__img {
-    width: 30%;
+    width: 30rem;
     height: auto;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;  
-  }
-
-  &:hover &__img {
-    width: 35%;
   }
 }

@@ -12,7 +12,6 @@
   min-width: 100rem;
 
   @include respond(tab-port) {
-    display: none;
   }
   
 
@@ -24,7 +23,6 @@
     align-items: center;
     list-style: none;
     margin: 0 auto;
-   
   }
 
   &__item {
@@ -41,9 +39,28 @@
   &__link:link,
   &__link:visited {
     text-decoration: none;
-    text-transform: uppercase;
     display: block;
-    // padding: 7.6rem 3rem 4rem 3rem;
+    position: relative;
+  }
+
+  &__link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 80px;
+    top: 50px;
+    margin: 0 auto;
+    border-bottom: #000 3px solid;
+    transform: scaleX(0.2);
+    opacity: 0;   
+  }
+
+  &__link:hover::after {
+    transform: scalex(1.0);
+    opacity: 1;
+    transform-origin: left;
+    transition: transform 250ms ease-in;   
   }
 
   &__logo {

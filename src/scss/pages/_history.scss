@@ -1,16 +1,16 @@
 .history {
-  background: transparent url("/src/img/Old paper 41 stock.JPEG");
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("/src/img/Old paper 41 stock.JPEG");
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: initial;
   width: 100%;
   padding-top: 10rem;
   min-width: 100rem;
+  padding-bottom: 10rem;
   
 
   &__section-container {
     text-align: center;
-    margin-bottom: 13.5rem;
     width: initial;
   }
 
@@ -74,13 +74,13 @@
   }
  
   &__text--body {
-    color: #333;
+    color: #555;
     font-size: 2.0rem;
     line-height: 1.7;
   }
 
   &__comment {
-    color: #555;
+    color: #fff;
     font-size: 2.0rem;
     font-weight: 700;
     line-height: 2.35;
@@ -89,7 +89,7 @@
   }
 
   &__greeting {
-    color: #555;
+    color: #fff;
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 1.71429;
