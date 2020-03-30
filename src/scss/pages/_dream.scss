@@ -88,5 +88,6 @@
 
   &:hover &__text {
     z-index: 1000;
+    transition: 2s background-color ;
   }
 }
