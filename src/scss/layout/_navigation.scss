@@ -1,0 +1,69 @@
+.navigation {
+  width: 100%;
+  position: fixed;
+  background: #fff;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  padding: 0 3rem 0 3rem;
+  margin: auto 0;
+  height: 15rem;
+  min-width: 100rem;
+
+  @include respond(tab-port) {
+  }
+  
+
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    align-items: center;
+    list-style: none;
+    margin: 0 auto;
+  }
+
+  &__item {
+   padding:0 1.2rem 0 1.2rem;
+   position: relative;
+  }
+
+  &__link {
+    font-size: 2.2rem;
+    position: relative; 
+    color: #333;    
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    display: block;
+    position: relative;
+  }
+
+  &__link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 80px;
+    top: 50px;
+    margin: 0 auto;
+    border-bottom: #000 3px solid;
+    transform: scaleX(0.2);
+    opacity: 0;   
+  }
+
+  &__link:hover::after {
+    transform: scalex(1.0);
+    opacity: 1;
+    transform-origin: left;
+    transition: transform 250ms ease-in;   
+  }
+
+  &__logo {
+    width: 15rem;
+  }
+}
